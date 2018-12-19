@@ -18,10 +18,13 @@ public class Exponential
      * @param a The number exponential is to be calculated upon
      * @param n The exponential value
      */
-    public void exp() 
+    public long exp(long a, long n) 
     {
-        // if() {
-            
-        // }
+        if(n > 0) {
+            return a * exp(a, n-1);
+        }
+        else {
+            return 1;
+        }
     }
 }
